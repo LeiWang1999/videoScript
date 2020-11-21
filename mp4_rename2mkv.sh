@@ -5,7 +5,7 @@ OLDIFS="$IFS"
 IFS=$"\n"
 for filename in *.mp4
 do
-	mv ${filename}.mp4 ${filename}.mkv
+	mv ${filename} ${filename%.*}.mkv
 done
 IFS=$OLDIFS
 
